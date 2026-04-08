@@ -38,6 +38,9 @@ LIBDIRS = $(addsuffix /lib,$(SHARED_LIBPATHS) $(STATIC_LIBPATHS)) /usr/local/lib
 # Set shared library paths to be found in runtime (-rpath)
 RUNDIRS = $(SHARED_LIBPATHS:%=$(shell pwd)/%/lib)
 
+# 🔥 AGREGADO ACÁ
+LIBS += readline
+
 # Set intermediate objects
 OBJS = $(patsubst src/%.c,obj/%.o,$(SRCS_C))
 
