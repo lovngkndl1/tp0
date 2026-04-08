@@ -1,7 +1,6 @@
-##include "client.h"
+#include "client.h"
 #include <string.h>
-#include <readline/readline.h>
-#include <readline/history.h>
+
 
 int main(void){
 	int conexion;
